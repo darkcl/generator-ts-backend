@@ -9,6 +9,7 @@
     "debug": "nodemon --watch ./dist --inspect=0.0.0.0:9222 --nolazy ./dist/server.js",
     "docker-debug": "make dev",
     "test": "nyc mocha tests/**/*.test.ts tests/services/**/*.test.ts tests/middleware/**/*.test.ts",
+    "watch-test": "nodemon -e ts --exec \"npm test\" --watch app --watch tests --watch package.json",
     "test-bamboo": "nyc mocha tests/**/*.test.ts tests/services/**/*.test.ts tests/middleware/**/*.test.ts --reporter mocha-bamboo-reporter --reporter-options output=./report/mocha.json",
     "sonar-report-local": "npm run test-sonar;node_modules/sonarqube-scanner/dist/bin/sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin",
     "start": "node ./dist/server.js"
