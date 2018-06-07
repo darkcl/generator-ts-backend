@@ -54,6 +54,6 @@ The variables will include `version`, so bamboo can generate version number acco
 
 Run `make test` and `make itest`
 
-## Release Phrase
+### Release Phrase
 
 Run `make push` and `make push-latest`
