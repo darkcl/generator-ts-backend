@@ -1,5 +1,12 @@
 # Typescript Backend Project Generator
 
+## Generate Project
+
+```sh
+npm install -g generator-ts-backend
+yo ts-backend
+```
+
 ## What is included?
 
 - Basic VSCode settings
