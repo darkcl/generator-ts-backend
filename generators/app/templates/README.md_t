@@ -1,0 +1,9 @@
+#<%= name %>
+
+## Running Project
+
+```
+make dev
+```
+
+

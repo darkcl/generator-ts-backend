@@ -1,0 +1,24 @@
+{
+  "name": "generator-ts-backend",
+  "version": "0.0.1",
+  "description": "Typescript Backend Project Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "generators"
+  ],
+  "author": "Yeung Yiu Hung",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^2.0.5",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}

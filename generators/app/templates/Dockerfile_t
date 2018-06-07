@@ -1,0 +1,14 @@
+FROM <%= dockerRegistry %><%= nodeVersion %>
+
+<% if (npmRegistry.length > 0) { %>
+RUN npm config set registry=<%= npmRegistry %>
+<% } %>
+
+WORKDIR /server
+
+COPY . /server
+RUN npm install && npm run postinstall && ls ./dist
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
